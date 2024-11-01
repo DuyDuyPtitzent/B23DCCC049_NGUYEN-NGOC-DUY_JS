@@ -1,0 +1,119 @@
+/* Tổng thể */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+    background-color: #f4f7f9;
+    color: #333;
+}
+
+/* Tiêu đề */
+h1 {
+    color: #2f6c31;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Các nhóm form */
+.sinh_vien {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+label {
+    width: 120px;
+    font-weight: bold;
+}
+
+/* Input và Select */
+input, select {
+    width: calc(100% - 130px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #3a853c;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+}
+
+/* Nút thêm sinh viên */
+button {
+    padding: 12px 20px;
+    background-color: #0f7113;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #224f25;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Bảng */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+td {
+    background-color: #fafafa;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Các nút sửa và xóa */
+button.edit-btn, button.delete-btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.edit-btn {
+    background-color: #ff9800;
+    color: white;
+}
+
+button.delete-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+button.edit-btn:hover {
+    background-color: #e68900;
+}
+
+button.delete-btn:hover {
+    background-color: #d32f2f;
+}
