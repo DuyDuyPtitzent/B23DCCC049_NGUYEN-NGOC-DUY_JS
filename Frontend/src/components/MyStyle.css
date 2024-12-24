@@ -1,0 +1,285 @@
+/*<style type="text/css">.table&amp;amp;gt;tbody&amp;amp;gt;tr&amp;amp;gt;td, .table&amp;amp;gt;tfoot&amp;amp;gt;tr&amp;amp;gt;td {  
+vertical-align: middle;
+}*/
+
+
+.btn_control {
+    display: block;
+    width: 100%;
+    padding: .6rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+}
+
+.cart-footer {
+    z-index: 2;
+    position: -webket-sticky;
+    position: sticky;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 20.3125rem 11.875rem;
+    -webkit-box-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    background: #fff;
+    width: 100%;
+    -webkit-box-flex: 1;
+    flex: 1;
+    font-size: 1rem;
+    margin-top: .75rem;
+}
+
+@media screen and (max-width: 600px) {
+    table#cart tbody td .form-control {
+        display: inline !important;
+    }
+    .actions .btn {
+        width: 36%;
+        margin: 1.5em 0;
+    }
+    .actions .btn-info {
+        float: left;
+    }
+    .actions .btn-danger {
+        float: right;
+    }
+    table#cart thead {
+        display: none;
+    }
+    table#cart tbody td {
+        display: block;
+        padding: .6rem;
+        min-width: 320px;
+    }
+    table#cart tbody tr td:first-child {
+        background: #333;
+        color: #fff;
+    }
+    table#cart tbody td:before {
+        content: attr(data-th);
+        font-weight: bold;
+        display: inline-block;
+        width: 8rem;
+    }
+    table#cart tfoot td {
+        display: block;
+    }
+    table#cart tfoot td .btn {
+        display: block;
+    }
+}
+.table {
+  width: 100%; /* Đảm bảo bảng hiển thị đầy đủ */
+  border-collapse: collapse; /* Loại bỏ khoảng cách giữa các ô */
+  background-color: #fff7cc; /* Màu vàng nhẹ */
+  color: #333; /* Màu chữ */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+}
+
+.table th,
+.table td {
+  border: 1px solid #e0e0e0; /* Viền nhẹ giữa các ô */
+  padding: 8px 12px; /* Khoảng cách giữa nội dung và viền */
+  text-align: left; /* Căn trái nội dung */
+}
+
+.table th {
+  background-color: #ffe680; /* Màu nền tiêu đề bảng */
+  font-weight: bold; /* Chữ đậm */
+}
+
+.table tr:nth-child(even) {
+  background-color: #fff9e6; /* Màu nền khác nhau cho hàng chẵn */
+}
+
+.table .ThanhToan {
+  font-family: "Times New Roman", serif; /* Kiểu chữ Times */
+}
+
+.inputThanhToan {
+  width: 100%; /* Đảm bảo trường nhập liệu rộng vừa đủ */
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px; /* Bo viền nhẹ */
+}
+
+.btn-sec .datHang {
+  background-color: #f7d75a; /* Màu nền nút */
+  color: #fff; /* Màu chữ */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px; /* Bo góc nút */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-sec .datHang:hover {
+  background-color: #e6b800; /* Màu nền khi hover */
+}
+
+.topicArticle {
+    left: 0;
+    bottom: 10px;
+    margin: 10px;
+}
+
+.header__navbar {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.reason {
+    font-size: medium;
+}
+
+.answerQuestion h1 {
+    font-size: 28px;
+}
+
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;  /* Xếp các phần tử theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều dọc */
+    align-items: center;     /* Căn giữa theo chiều ngang */
+    text-align: center;      /* Căn giữa nội dung văn bản */
+    height: 100%;            /* Đảm bảo chiều cao của slide đầy đủ */
+  }
+  h3,
+  h5,
+  h2{
+    font-size: 4rem; /* Thay đổi kích thước chữ */
+    color: #090909;     /* Đổi màu chữ */
+    font-family: 'Dancing Script', cursive;
+  }
+  .box-user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    /* Căn giữa các phần tử trong box-user */
+  }
+  
+  .author {
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px 0;
+    font-size: 20px; /* Kích thước chữ */
+  }
+  
+  .country {
+    color: rgb(226, 109, 25);
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 18px; /* Kích thước chữ */
+  }
+h8{
+    font-size: 1rem; /* Thay đổi kích thước chữ */
+    font-family: 'Dancing Script', cursive;
+}
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+  }
+  
+  #snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  
+    
+  .buy {
+    border: 1.2px solid #966d12; /* Viền */
+    border-radius: 8px; /* Bo góc cong (tăng giá trị nếu muốn cong hơn) */
+    padding: 5px 13px; /* Kích thước nội dung */
+    background-color: rgb(199, 124, 73); /* Màu nền */
+    color: #123c1c; /* Màu chữ */
+    cursor: pointer; /* Con trỏ chỉ tay khi hover */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Hiệu ứng khi hover */
+    margin-left: 76px; /* Điều chỉnh khoảng cách sang phải theo ý muốn */
+}
+
+.buy:hover {
+    background-color: #ffffff; /* Màu nền khi hover */
+    color: rgb(20, 15, 15); /* Màu chữ khi hover */
+    transform: scale(1.1);
+}
+
+.buy {
+  display: block; /* Đưa nút thành một khối riêng */
+  margin-top: 7px; /* Khoảng cách giữa giá và nút */
+}
+
+.price {
+  font-size: 17px;
+  margin-bottom: 6px; /* Tạo khoảng cách dưới */
+  display: inline-block; /* Đảm bảo margin hoạt động */
+ 
+}
+
+ .description {
+  color: #726c6c; /* Đổi màu chữ (xanh dương) */
+  font-weight: bold; /* In đậm chữ (tuỳ chọn) */
+  font-size: 11px; /* Cỡ chữ */
+
+}
+
+.buys {
+  border: 1.2px solid #966d12; /* Viền */
+  border-radius: 8px; /* Bo góc cong (tăng giá trị nếu muốn cong hơn) */
+  padding: 5px 13px; /* Kích thước nội dung */
+  background-color: rgb(199, 124, 73); /* Màu nền */
+  color: #123c1c; /* Màu chữ */
+  cursor: pointer; /* Con trỏ chỉ tay khi hover */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Hiệu ứng khi hover */
+  margin-left: 105px; /* Điều chỉnh khoảng cách sang phải theo ý muốn */
+}
+
+.buys:hover {
+  background-color: #ffffff; /* Màu nền khi hover */
+  color: rgb(20, 15, 15); /* Màu chữ khi hover */
+  transform: scale(1.1);
+}
+
+.buys {
+display: block; /* Đưa nút thành một khối riêng */
+margin-top: 7px; /* Khoảng cách giữa giá và nút */
+}
+
+
+
+
